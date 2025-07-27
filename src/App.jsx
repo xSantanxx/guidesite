@@ -43,7 +43,7 @@ function App() {
         animate-bounce
         top-[25%]"> */}
         {/* </div> */}
-        <div className={`border-2 border-solid fixed h-1/2 w-2xl left-[20%] top-[33%] rounded-2xl bg-rose-200
+        <div className={`flex flex-col overflow-hidden border-2 border-solid fixed h-1/2 w-2xl left-[20%] top-[33%] rounded-2xl bg-rose-200
           transition-all duration-500 ease-in justify-items-center z-40
           ${fadeIn ? "opacity-100" : "opacity-0"}`}>
             <div className="bg-pink-50 rounded-t-lg justify-items-start grid
@@ -72,6 +72,22 @@ function App() {
               <label htmlFor="password">Your Password</label>
               <input type="password" placeholder="●●●●●●●" name="password" className="outline-2 rounded-md
               w-[50%]"/>
+            </div>
+            <div className="bg-transparent relative items-center top-[25%] mx-5 w-9/10 h-[5%]">
+            <div className="justify-evenly">
+                <input type="checkbox" id="rememberMe" name="rememberMe" className="mr-2" />
+                <label htmlFor="rememberMe">Remember Me</label>
+                <div className="float-right mr-4">
+                  <p className="text-red-400 cursor-pointer
+                  hover:underline underline-offset-1">Lost Password?</p>
+                </div>
+            </div>
+              <div className="bg-pink-300/40 hover:bg-pink-400 relative top-[50%] h-15 w-[90%] rounded-[2vw]
+              left-[5%]">
+                <button className="absolute top-4 left-[37%]">
+                      Login to your account
+                </button>
+              </div>
             </div>
           </div>
       </div>
